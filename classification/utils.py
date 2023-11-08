@@ -18,6 +18,7 @@ def get_mean_and_std(dataset):
     mean = torch.zeros(3)
     std = torch.zeros(3)
     print('==> Computing mean and std..')
+    
     for inputs, targets in dataloader:
         for i in range(3):
             mean[i] += inputs[:,i,:,:].mean()
