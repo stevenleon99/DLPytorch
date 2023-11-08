@@ -9,6 +9,7 @@ from matplotlib import pyplot as plt
 
 from util import plot_image, plot_curve, one_hot
 
+
 # load data
 def load_dataset():
     batch_size = 512 #the image process once

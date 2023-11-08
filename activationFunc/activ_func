@@ -1,0 +1,7 @@
+import torch
+import numpy as np
+
+a= torch.linspace(-100, 100, 10)
+print(torch.sigmoid(a), torch.sigmoid(a).size())
+
+print(torch.relu(a))
