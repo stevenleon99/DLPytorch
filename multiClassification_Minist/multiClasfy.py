@@ -98,4 +98,4 @@ if __name__ == '__main__':
     parameters = [w1, b1, w2, b2, w3, b3]
     for epoch in range(epochs):
         training(train_loader, criteon)
-        testing(test_loader, criteon)
+        testing(test_loader, criteon) # can find the problem or overfitting at early stage by test
