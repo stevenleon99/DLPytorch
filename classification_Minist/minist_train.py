@@ -18,7 +18,7 @@ def load_dataset():
         torchvision.datasets.MNIST('mnist_data', train=True, download=True,
                                    transform=torchvision.transforms.Compose([ 
                                        torchvision.transforms.ToTensor(), # transfer numpy  to tensor
-                                       torchvision.transforms.Normalize( # Data-0.1306 / 0.3081 to normalize data, data distribute around 0
+                                       torchvision.transforms.Normalize( # Data-0.1306(mean) / 0.3081(dev) to normalize data, data distribute around 0
                                            (0.1307,), (0.3081,)) 
                                    ])),
         batch_size=batch_size, shuffle=True)

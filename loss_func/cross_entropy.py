@@ -16,6 +16,7 @@ pred = F.softmax(logits, dim=1)
 pred_log = torch.log(pred)
 print("pred_log: ", pred_log)
 
+# the label term dimension is 1, the cross entropy realise one-hot in build-in
 print(F.cross_entropy(logits, torch.tensor([3]))) # the loss function has integrate a softmax
 print(F.nll_loss(pred_log, torch.tensor([3]))) # or use none negative loss
 
