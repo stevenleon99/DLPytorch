@@ -5,3 +5,4 @@
 - the technics to mitigate overfitting and underfitting
 - common CNN net architecture summary like googLeNet, LeNet, VGG...
 - common GAN net architecture summary
+- repository of classified literature
